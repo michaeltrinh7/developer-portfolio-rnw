@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "developer-portfolio-rnw",
+    "slug": "developer-portfolio-rnw",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "userInterfaceStyle": "automatic"
+  }
+}
