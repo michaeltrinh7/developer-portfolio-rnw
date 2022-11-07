@@ -5,11 +5,5 @@ module.exports = {
         'import/ignore': ['react-native'],
     },
     rules: {
-        "no-restricted-imports": ["error", {
-            "patterns": [{
-                "group": ["@expo/html-elements"],
-                "message": "Use `./modules/ui/core/HtmlElements` instead of '@expo/html-elements'"
-            }]
-        }]
     }
 };
