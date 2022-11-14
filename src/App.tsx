@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import { Header } from './components/Header';
+import { Home } from './components/Home';
 import useMediaQuery from './core/hooks/useMediaQuery';
 import { useAppFonts } from './resources/Fonts';
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <Header media={media} />
+      <Home media={media}></Home>
     </SafeAreaProvider>
   );
 

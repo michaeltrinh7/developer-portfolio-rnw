@@ -15,7 +15,7 @@ interface LinkProps extends ChildrenProps, StyleProps {
 
 export const Link = ({ children, style, href, target }: LinkProps) => {
   return (
-    <A style={[style, { ...styles.text }]} href={href} target={target}>
+    <A style={[{ ...styles.text }, { ...style }]} href={href} target={target}>
       {children}
     </A>
   );

@@ -5,10 +5,10 @@ import { ChildrenProps } from '../../props/ChildrenProps';
 import { StyleProps } from '../../props/StyleProps';
 import defaultStyles from '../../resources/DefaultStyles';
 
-interface TextProps extends ChildrenProps, StyleProps {}
+interface TextProps extends ChildrenProps, StyleProps { }
 
 export const Text = ({ children, style }: TextProps) => {
-  return <RNText style={[style, { ...styles.text }]}>{children}</RNText>;
+  return <RNText style={[{ ...styles.text }, { ...style }]}>{children}</RNText>;
 };
 
 const styles = StyleSheet.create({

@@ -11,10 +11,10 @@ export function styleMedia<T extends NamedStyles<T> | NamedStyles<any>>(
 }
 
 export const paddingStyle = (
-  top: number,
-  right: number,
-  bottom?: number,
-  left?: number
+  top: number | string,
+  right: number | string,
+  bottom?: number | string,
+  left?: number | string
 ): FlexStyle => {
   return {
     paddingTop: top,
@@ -25,10 +25,10 @@ export const paddingStyle = (
 };
 
 export const marginStyle = (
-  top: number,
-  right: number,
-  bottom?: number,
-  left?: number
+  top: number | string,
+  right: number | string,
+  bottom?: number | string,
+  left?: number | string
 ): FlexStyle => {
   return {
     marginTop: top,
